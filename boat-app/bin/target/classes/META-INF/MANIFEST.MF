@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: thoma
+Build-Jdk: 13.0.2
+Implementation-Title: spring-security
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: com.projet.spring-security
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-boot
+ -starter-parent/java-spring-security
+Created-By: Maven Integration for Eclipse
+
