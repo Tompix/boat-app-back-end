@@ -1,7 +1,0 @@
-com\owt\boat\app\config\BoatAppConfig.class
-com\owt\boat\app\BoatApp.class
-com\owt\boat\app\model\User.class
-com\owt\boat\app\model\Boat.class
-com\owt\boat\app\repo\BoatRepository.class
-com\owt\boat\app\controller\BoatController.class
-com\owt\boat\app\controller\LoginController.class
