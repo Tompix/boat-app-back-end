@@ -1,6 +1,10 @@
 # Boat App
 Boat app is a API for create, update, read, delete and list boats (CRUDL) with authentification.
 
+# Authentification
+Login => user
+Password => password
+
 ## Prerequisite
 For run application, you should have a JRE Java 8 or more
 
