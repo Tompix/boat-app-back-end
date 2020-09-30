@@ -7,6 +7,6 @@ For run application, run
 ## Installation
 Launch application with 'run.bat' file in root folder
 
-# Authentification
+## Authentification
 Login => user
 Password => password
