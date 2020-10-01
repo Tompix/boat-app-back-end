@@ -3,6 +3,8 @@ package com.owt.boat.app.controller;
 
 import static org.springframework.web.bind.annotation.RequestMethod.GET;
 import static org.springframework.web.bind.annotation.RequestMethod.POST;
+import static org.springframework.web.bind.annotation.RequestMethod.PUT;
+import static org.springframework.web.bind.annotation.RequestMethod.DELETE;
 
 import java.util.List;
 
@@ -58,9 +60,8 @@ public class BoatController {
 		return boat;
 	}	
 
-	//TODO - Change HTTP VERBE, it should be a UPDATE VERBE but httpClientModule from angular doesn't send Content-Type Authorisation in header for update 
 	@ResponseStatus(HttpStatus.OK)
-	@RequestMapping(value = "update/{id}", method = POST)
+	@RequestMapping(value = "{id}", method = PUT)
 	@ApiMethod(description = "Update boat price")
 	public void update(@ApiPathParam(name = "id") @PathVariable("id") @Min(1) long id, @RequestBody Boat updatedBoat) {
 		Boat boat = boatRepository.getOne(id);
@@ -77,9 +78,8 @@ public class BoatController {
 
 	}	
 
-	//TODO - Change HTTP VERBE, it should be a DELETE VERBE but httpClientModule from angular doesn't send Content-Type Authorisation in header for delete 
 	@ResponseStatus(value = HttpStatus.NO_CONTENT)
-	@RequestMapping(value = "delete/{id}", method = GET)
+	@RequestMapping(value = "{id}", method = DELETE)
 	@ApiMethod(description = "Remove the boat from the database")
 	public void remove(@ApiPathParam(name = "id") @PathVariable("id") @Min(1) long id){
 		boatRepository.deleteById(id);
